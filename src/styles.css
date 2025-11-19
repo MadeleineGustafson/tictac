@@ -2,10 +2,17 @@
   box-sizing: border-box;
 }
 
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  background-color: #9dbdb8;
 }
 
 h1 {
@@ -51,34 +58,49 @@ ul {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Chewy";
   margin: 20px;
   padding: 0;
 }
 
 .square {
-  background: #fff;
+  background: #ea2e00;
   border: 1px solid #999;
+  border-radius: 5px;
   float: left;
-  font-size: 24px;
+  font-family: "Chewy";
+  font-size: 40px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 100px;
+  color: #f0e7d6;
 }
-
+.bigSquareBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #719993;
+  width: 400px;
+  border-radius: 20px;
+  height: 500px;
+  padding: 1rem;
+}
 .board-row:after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
 .status {
   margin-bottom: 10px;
+  font-size: 3rem;
+  color: #f0e7d6;
 }
 .game {
   display: flex;
