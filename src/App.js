@@ -61,7 +61,7 @@ export default function Board() {
   return (
     <>
       <div className="headerText">
-        <h2>TIC TAC TOE</h2>
+        <h2 className="titleText">TIC TAC TOE</h2>
       </div>
       <div className="bigSquareBoard">
         <div className="board-row">

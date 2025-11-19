@@ -13,16 +13,13 @@ body {
   margin: 20px;
   padding: 0;
   background-color: #9dbdb8;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   margin-top: 0;
   font-size: 22px;
-}
-
-h2 {
-  margin-top: 0;
-  font-size: 20px;
 }
 
 h3 {
@@ -64,17 +61,17 @@ body {
 }
 
 .square {
-  background: #ea2e00;
-  border: 1px solid #999;
-  border-radius: 5px;
+  background: #9dbdb8;
+  border: 0px solid #9dbdb8;
+  border-radius: 20px;
   float: left;
-  font-family: "Chewy";
-  font-size: 40px;
+  font-family: "Cherry Bomb One";
+  font-size: 60px;
   font-weight: bold;
   line-height: 34px;
   height: 100px;
-  margin-right: -1px;
-  margin-top: -1px;
+  margin-right: 1px;
+  margin-top: 1px;
   padding: 0;
   text-align: center;
   width: 100px;
@@ -99,7 +96,8 @@ body {
 
 .status {
   margin-bottom: 10px;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin: 20px;
   color: #f0e7d6;
 }
 .game {
@@ -109,4 +107,14 @@ body {
 
 .game-info {
   margin-left: 20px;
+}
+
+.headerText {
+  display: flex;
+  justify-content: center;
+}
+
+.titleText {
+  font-size: 40px;
+  color: #719993;
 }
