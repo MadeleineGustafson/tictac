@@ -118,3 +118,10 @@ body {
   font-size: 40px;
   color: #719993;
 }
+
+.restartButton {
+  background-color: #9dbdb8;
+  border-radius: 20px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: #719993;
+}

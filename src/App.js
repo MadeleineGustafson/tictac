@@ -58,6 +58,11 @@ export default function Board() {
   } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
+
+  function handleRestart() {
+    setSquares(Array(9).fill(null));
+    setXIsNext(true);
+  }
   return (
     <>
       <div className="headerText">
@@ -80,6 +85,9 @@ export default function Board() {
           <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
         </div>
         <div className="status"> {status}</div>
+        <div className="restartButton" onClick={handleRestart}>
+          Restart
+        </div>
       </div>
     </>
   );
