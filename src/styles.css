@@ -76,7 +76,9 @@ body {
   text-align: center;
   width: 100px;
   color: #f0e7d6;
+  text-shadow: rgba(255, 255, 255, 0.2) 0px 4px 12px;
 }
+
 .bigSquareBoard {
   display: flex;
   flex-direction: column;
@@ -87,6 +89,7 @@ body {
   border-radius: 20px;
   height: 500px;
   padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 12px;
 }
 .board-row:after {
   clear: both;
@@ -97,8 +100,40 @@ body {
 .status {
   margin-bottom: 10px;
   font-size: 2rem;
-  margin: 20px;
+  margin: 10px;
   color: #f0e7d6;
+  font-family: "Cherry Bomb One";
+  text-shadow: rgba(255, 255, 255, 0.2) 0px 4px 12px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.labelWinner {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  animation: blink 1.2s infinite;
+}
+
+.labelPlayer {
+  font-family: "Chewy";
+}
+
+.nextPlayer {
+  font-size: 40px;
 }
 .game {
   display: flex;
@@ -115,13 +150,15 @@ body {
 }
 
 .titleText {
-  font-size: 40px;
+  font-size: 60px;
   color: #719993;
+  margin: 40px;
 }
 
 .restartButton {
   background-color: #9dbdb8;
   border-radius: 20px;
   padding: 0.5rem 1rem 0.5rem 1rem;
+
   color: #719993;
 }

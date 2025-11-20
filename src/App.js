@@ -52,12 +52,22 @@ export default function Board() {
   }
 
   const winner = calculateWinner(squares);
-  let status;
-  if (winner) {
-    status = "winner is: " + winner;
-  } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
-  }
+
+  // 🔥 Updated: split into styled parts
+  const status = (
+    <div className="status">
+      {winner ? (
+        <>
+          <span className="labelWinner"> {winner} won!</span>
+        </>
+      ) : (
+        <>
+          <span className="labelPlayer">Next player: </span>
+          <span className="nextPlayer">{xIsNext ? "X" : "O"}</span>
+        </>
+      )}
+    </div>
+  );
 
   function handleRestart() {
     setSquares(Array(9).fill(null));
