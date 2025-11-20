@@ -85,7 +85,9 @@ export default function Board() {
   return (
     <>
       <div className="headerText">
-        <h2 className="titleText">TIC TAC TOE</h2>
+        <p className="titleText">TIC</p>
+        <p className="titleTextTwo">TAC</p>
+        <p className="titleText">TOE</p>
       </div>
       <div className="bigSquareBoard">
         <div className="board-row">
