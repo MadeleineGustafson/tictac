@@ -52,18 +52,27 @@ export default function Board() {
   }
 
   const winner = calculateWinner(squares);
+  const noMovesPlayed = squares.every((sq) => sq === null);
+  const boardFull = squares.every((sq) => sq !== null);
 
-  // 🔥 Updated: split into styled parts
   const status = (
     <div className="status">
-      {winner ? (
+      {noMovesPlayed ? (
+        <>
+          <span className="labelPress">Press on a square to start</span>
+        </>
+      ) : winner ? (
         <>
           <span className="labelWinner"> {winner} won!</span>
         </>
+      ) : boardFull ? (
+        <>
+          <span className="label">No one won :(</span>
+        </>
       ) : (
         <>
-          <span className="labelPlayer">Next player: </span>
-          <span className="nextPlayer">{xIsNext ? "X" : "O"}</span>
+          <span className="label">Next player:</span>
+          <span className="value">{xIsNext ? "X" : "O"}</span>
         </>
       )}
     </div>

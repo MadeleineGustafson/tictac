@@ -131,6 +131,10 @@ body {
 .labelPlayer {
   font-family: "Chewy";
 }
+.labelPress {
+  font-family: "Cherry Bomb One";
+  font-size: 25px;
+}
 
 .nextPlayer {
   font-size: 40px;
